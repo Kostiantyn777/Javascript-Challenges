@@ -18,10 +18,10 @@ function maxDiff(arr, arrLength) {
     for (let j = i + 1; j < arrLength; j++) {
       if (j - i === 1 && arr[j] - arr[i] > max_diff)
         console.log((max_diff = arr[j] - arr[i]));
-        else if(j - i === 1 && arr[i] - arr[j] > max_diff) 
+      else if (j - i === 1 && arr[i] - arr[j] > max_diff)
         console.log((max_diff = arr[i] - arr[j]));
     }
   }
   return max_diff;
 }
-console.log(maxDiff(arrrayOfNumbers, lengthOfArray));
+console.log(`The maximum profit is ${maxDiff(arrrayOfNumbers, lengthOfArray)}`);

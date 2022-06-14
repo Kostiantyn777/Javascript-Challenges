@@ -7,8 +7,7 @@ let sentenceArray = sentence
   .replace(/[^a-z0-9]/gi, " ")
   .split(" ");
 
-console.log(sentenceArray);
 const arrayFiltered = sentenceArray.filter((el) => el !== "");
-
+console.log(arrayFiltered);
 let newArray = arrayFiltered[arrayFiltered.length - 1].length;
 console.log(newArray);
